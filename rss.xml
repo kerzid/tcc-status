@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>The Coarse Curse - Comic Status</title>
+    <link>https://thecoarsecurse.crd.co/#status</link>
+    <description>Current state of The Coarse Curse series</description>
+    <language>en-us</language>
+
+    <item>
+      <title>The Coarse Curse Status - Welcome</title>
+      <link>https://thecoarsecurse.crd.co/#status</link>
+      <description>
+        Subscribe to receive announcements and development updates
+        for The Coarse Curse.
+      </description>
+      <guid isPermaLink="false">tcc-welcome-001</guid>
+      <pubDate>Wed, 25 Nov 2026 18:00:00 +0800</pubDate>
+    </item>
+
+  </channel>
+</rss>
