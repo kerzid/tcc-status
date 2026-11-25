@@ -1,0 +1,61 @@
+
+name: Update RSS Feed
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'updates.json'
+      - 'generate_feed.py'
+      - 'index.html'
+      - 'favicon.png'
+      - '.github/workflows/update-rss.yml'
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Generate RSS feed
+        run: python generate_feed.py
+
+      - name: Save generated RSS
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add rss.xml
+          if ! git diff --cached --quiet; then
+            git commit -m "Update RSS feed"
+            git push
+          fi
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload website
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: Publish website
+        uses: actions/deploy-pages@v4
