@@ -1,31 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <rss version="2.0">
   <channel>
-    <title>The Coarse Curse - Comic Status</title>
+    <title>The Coarse Curse - Status Updates</title>
     <link>https://thecoarsecurse.crd.co/#status</link>
-    <description>Current state of The Coarse Curse series</description>
+    <description>Announcements and development updates for The Coarse Curse.</description>
     <language>en-us</language>
-
-    <item>
-      <title>The Coarse Curse Status - Welcome</title>
+    <image>
+      <url>https://kerzid.github.io/tcc-status/favicon.png</url>
+      <title>The Coarse Curse</title>
       <link>https://thecoarsecurse.crd.co/#status</link>
-      <description>
-        Subscribe to receive announcements and development updates
-        for The Coarse Curse.
-      </description>
-      <guid isPermaLink="false">tcc-welcome-001</guid>
-      <pubDate>Wed, 25 Nov 2026 18:00:00 +0800</pubDate>
+    </image>
+    <item>
+      <title>Streamlined test</title>
+      <link>https://thecoarsecurse.crd.co/#status</link>
+      <description>Testing new rss update system</description>
+      <guid isPermaLink="false">tcc-11-25-2026-streamline</guid>
+      <pubDate>Wed, 25 Nov 2026 10:00:00 +0000</pubDate>
     </item>
-
-<item>
-  <title>Episode 3, Page 61 - 65 || Status</title>
-  <link>https://thecoarsecurse.crd.co/#status</link>
-  <description>
-  Progress: █████░░░░░░░░░░ || Storyboard - 100% || Lineart - 29% || Colors - 15% ||Lettering - 100%
-  </description>
-  <guid isPermaLink="false">tcc-status-11-25-2026</guid>
-  <pubDate>Thu, 26 Nov 2026 12:00:00 +0800</pubDate>
-</item>
-    
   </channel>
 </rss>
