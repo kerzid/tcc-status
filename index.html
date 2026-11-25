@@ -1,14 +1,161 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Coarse Curse - Updates</title>
+
+  <title>The Coarse Curse | Updates</title>
+
   <link rel="icon" type="image/png" href="./favicon.png">
+
+  <meta name="theme-color" content="#24212b">
+  <meta name="description" content="Follow announcements and development updates from The Coarse Curse.">
+<!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Shrikhand&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      background: #24212b;
+      color: #A67D71;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 540px;
+      text-align: center;
+      padding: 48px 32px;
+      border: 1px solid #514858;
+      border-radius: 16px;
+      background: #302b38;
+      box-shadow: 0 16px 50px #00000035;
+    }
+
+    .ornament {
+      color: #F7D6BF;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .eyebrow {
+      color: #A67D71;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 14px 0 10px;
+      color: #F7D6BF;
+      font-family: 'Shrikhand', cursive;
+      font-size: clamp(27px, 6vw, 42px);
+      font-weight: normal;
+      letter-spacing: 0;
+    }
+
+    .subtitle {
+      color: #A67D71;
+      font-size: 14px;
+      line-height: 1.8;
+      margin: 0 auto;
+      max-width: 380px;
+    }
+
+    .divider {
+      width: 48px;
+      height: 1px;
+      background: #A67D71;
+      margin: 30px auto;
+    }
+
+    .rss-button {
+      display: inline-block;
+      padding: 13px 25px;
+      border-radius: 6px;
+      background: #F7D6BF;
+      color: #302b38;
+      text-decoration: none;
+      font-family: 'Poppins', sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .rss-button:hover {
+      background: #ffe6d5;
+      transform: translateY(-2px);
+    }
+
+    .note {
+      color: #A67D71;
+      font-size: 11px;
+      line-height: 1.8;
+      margin-top: 22px;
+    }
+
+    footer {
+      margin-top: 42px;
+      color: #A67D71;
+      font-size: 11px;
+    }
+
+    footer a {
+      color: #F7D6BF;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>The Coarse Curse RSS Feed</h1>
-  <p>Subscribe to get news on new pages.</p>
-  <p><a href="./rss.xml">RSS Feed</a></p>
+  <main class="container">
+
+    <div class="ornament">✧</div>
+
+    <div class="eyebrow">From your awesome Kerzid</div>
+
+    <h1>The Coarse Curse RSS Feed</h1>
+
+    <p class="subtitle">
+      Updates on the current state of The Coarse Curse series.
+    </p>
+
+    <div class="divider"></div>
+
+    <a class="rss-button" href="./rss.xml">
+      ◉ &nbsp; SUBSCRIBE VIA RSS
+    </a>
+
+    <p class="note">
+      Click it Click it Click it
+    </p>
+
+    <footer>
+      <a href="https://thecoarsecurse.crd.co/">
+        Return to The Coarse Curse
+      </a>
+      <br><br>
+      Watch out for crabs on the road
+    </footer>
+
+  </main>
 </body>
 </html>
