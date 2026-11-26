@@ -11,6 +11,13 @@
       <link>https://thecoarsecurse.crd.co/#status</link>
     </image>
     <item>
+      <title>One more debugging test. Click the link.</title>
+      <link>https://thecoarsecurse.crd.co/#secret</link>
+      <description>Custom link test</description>
+      <guid isPermaLink="false">tcc-11-26-2026-customlinktest</guid>
+      <pubDate>Thu, 26 Nov 2026 06:31:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Final RSS Check just to make sure things are running smooooth</title>
       <link>https://thecoarsecurse.crd.co/#status</link>
       <description>Yup. What the title says.</description>
