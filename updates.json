@@ -19,5 +19,12 @@
     "description": "Yup. What the title says.",
     "link": "https://thecoarsecurse.crd.co/#status",
     "id": "tcc-11-25-2026-streamline-smooth"
+  },
+  {
+    "title": "One more debugging test. Click the link.",
+    "date": "2026-11-26T14:31:00+08:00",
+    "description": "Custom link test",
+    "link": "https://thecoarsecurse.crd.co/#secret",
+    "id": "tcc-11-26-2026-customlinktest"
   }
 ]
