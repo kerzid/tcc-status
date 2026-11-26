@@ -27,7 +27,7 @@ ET.SubElement(channel, "title").text = (
 )
 ET.SubElement(channel, "link").text = STATUS_URL
 ET.SubElement(channel, "description").text = (
-    "Announcements and development updates for The Coarse Curse."
+    "Updates to the current state of The Coarse Curse series."
 )
 ET.SubElement(channel, "language").text = "en-us"
 
