@@ -98,7 +98,7 @@
       font-size: 15px;
       font-weight: 700;
       letter-spacing: 1px;
-      transition: background 0.2s, transform 0.2s;
+      transition: background 0.2s, transform 0.2s ease;
     }
     
     .rss-button.copied {
@@ -107,7 +107,7 @@
     }
 
     .rss-button:hover {
-            transform: translateY(-2px);
+            transform: scale(1.10);
     }
 
     .note {
@@ -126,9 +126,11 @@
       font-weight: 700;
       text-decoration: none;
       border: 0px solid #A67D71;
-      transition: background-color 0.2s, color 0.2s;
+      transition: transform 0.25s ease, background-color 0.2s, color 0.2s;
     }    
-
+.return-button:hover {
+  transform: scale(1.10);
+}
     footer {
       margin-top: 42px;
       color: #A67D71;
