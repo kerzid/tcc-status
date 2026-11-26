@@ -15,8 +15,8 @@
 <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Shrikhand&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Shrikhand&family=Tilt+Warp&family=Lexend&display=swap" rel="stylesheet">
+
   <!-- RSS Auto Discovery-->
 <link   rel="alternate"  type="application/rss+xml"  title="The Coarse Curse - Status Updates"  href="./rss.xml" >
   
@@ -91,14 +91,19 @@
       display: inline-block;
       padding: 13px 25px;
       border-radius: 6px;
-      background: #F7D6BF;
-      color: #302b38;
+      background: #D98D7F;
+      color: #5C556F;
       text-decoration: none;
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Tilt Warp', sans-serif;;
       font-size: 12px;
       font-weight: 700;
       letter-spacing: 1px;
       transition: background 0.2s, transform 0.2s;
+    }
+    
+    .rss-button.copied {
+      background-color: #0F1119;
+      color: #F7D6BF
     }
 
     .rss-button:hover {
@@ -112,6 +117,17 @@
       line-height: 1;
       margin-top: 22px;
     }
+    .return-button {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #1F2436
+      color: #AD9595;
+      font-family: 'Lexend';
+      font-size: 14px;
+      text-decoration: none;
+      border: 1px solid #A67D71;
+      transition: background-color 0.2s, color 0.2s;
+    }    
 
     footer {
       margin-top: 42px;
@@ -149,14 +165,17 @@
 <script>
   function copyRSSLink() {
     const rssURL = "https://kerzid.github.io/tcc-status/rss.xml";
+    const button = document.querySelector(".rss-button");
 
     navigator.clipboard.writeText(rssURL).then(() => {
-      const button = document.querySelector(".rss-button");
       const originalText = button.textContent;
 
       button.textContent = "RSS LINK COPIED!";
+      button.classList.add("copied");
+
       setTimeout(() => {
         button.textContent = originalText;
+        button.classList.remove("copied");
       }, 2000);
     }).catch(() => {
       prompt("Copy the RSS feed link:", rssURL);
@@ -166,7 +185,7 @@
 
 <div class="divider"></div>
     <footer>
-      <a href="https://thecoarsecurse.crd.co/">
+      <a href="https://thecoarsecurse.crd.co/" class="return-button">
         Return to The Coarse Curse Directory
       </a>
       <br>
